@@ -10,18 +10,21 @@
 <body>
  <div class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
-        <div data-bs-interval="3000" class="carousel-item active">
+        <div data-bs-interval="1000" class="carousel-item active">
             <img src="https://cdn.pixabay.com/photo/2023/05/15/09/18/iceberg-7994536_1280.jpg">
         </div>
-        <div data-bs-interval="3000" class="carousel-item">
+        <div data-bs-interval="1000" class="carousel-item">
             <img src="https://cdn.pixabay.com/photo/2023/06/05/08/41/bird-8041708_1280.jpg">
         </div>
-        <div data-bs-interval="3000" class="carousel-item">
+        <div data-bs-interval="1000" class="carousel-item">
             <img src="https://cdn.pixabay.com/photo/2023/04/23/22/02/bird-7946807_1280.jpg">
         </div>
     </div>
-    <button class="carousel-control-prev">
+    <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
         <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+        <span class="carousel-control-next-icon"></span>
     </button>
  </div>
     
