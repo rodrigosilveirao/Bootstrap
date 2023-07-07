@@ -8,16 +8,25 @@
 </head>
 
 <body>
- <div class="carousel slide" data-bs-ride="carousel">
+ <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
     <div class="carousel-inner">
         <div data-bs-interval="1000" class="carousel-item active">
-            <img src="https://cdn.pixabay.com/photo/2023/05/15/09/18/iceberg-7994536_1280.jpg">
+            <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2023/05/15/09/18/iceberg-7994536_1280.jpg">
+        <div class="carousel-caption">
+            <h2>Img text 0</h2>
+        </div>
         </div>
         <div data-bs-interval="1000" class="carousel-item">
-            <img src="https://cdn.pixabay.com/photo/2023/06/05/08/41/bird-8041708_1280.jpg">
+            <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2023/06/05/08/41/bird-8041708_1280.jpg">
+            <div class="carousel-caption">
+                <h2>Img text 1</h2>
+            </div>
         </div>
         <div data-bs-interval="1000" class="carousel-item">
-            <img src="https://cdn.pixabay.com/photo/2023/04/23/22/02/bird-7946807_1280.jpg">
+            <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2023/04/23/22/02/bird-7946807_1280.jpg">
+            <div class="carousel-caption">
+                <h2>Img text 2</h2>
+            </div>
         </div>
     </div>
     <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
@@ -26,6 +35,11 @@
     <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
         <span class="carousel-control-next-icon"></span>
     </button>
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+        <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+    </div>
  </div>
     
 
