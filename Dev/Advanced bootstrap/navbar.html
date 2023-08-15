@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./lib/cdn.jsdelivr.net_npm_bootstrap@5.3.0_dist_css_bootstrap.min.css">
+    <title>Document</title>
+
+    <style>
+        .navbar-nav .nav-link.active{
+            color: white;
+        }
+
+        .nav-link{
+            text-align: center;
+        }
+
+        section{
+            height: 100vh;
+            background-color: gray;
+            padding-top: 90px;
+        }
+
+        header{
+            position: sticky;
+            top: 0;
+            left: 0;
+            background-color: white;
+        }
+    </style>
+
+</head>
+<body>
+    <header id="header">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <h1>Title</h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active"  href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"  href="#products">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"  href="#promotion">Promotion</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"  href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button id="btn-checar-emails" class="btn btn-warning" type="button">Check Messages</button>
+            </div>
+        </div>
+    </header>
+
+<div data-bs-spy="scroll" data-bs-target="#header">
+    <section id="home">
+        <h2>Home</h2>
+    </section>
+
+    <section id="products">
+        <h2>Products</h2>
+        <div class="container">
+            <nav class="nav nav-tabs">
+                <button data-bs-toggle="tab" data-bs-target="#aba1" class="nav-link active" type="button">Eletronics</button>
+                <button data-bs-toggle="tab" data-bs-target="#aba2" class="nav-link" type="button">Male</button>
+                <button data-bs-toggle="tab" data-bs-target="#aba3" class="nav-link" type="button">Female</button>
+            </nav>
+            <div class="tab-content">
+                <div class="tab-pane active" id="aba1">
+                    Conteudo aba Eletronics
+                </div>
+            </div>
+            <div class="tab-content">
+                <div class="tab-pane" id="aba2">
+                    Conteudo aba Male
+                </div>
+            </div>
+            <div class="tab-content">
+                <div class="tab-pane" id="aba3">
+                    Conteudo aba Female
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section id="promotion">
+        <h2>Promotion</h2>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+    </section>
+</div>
+
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div class="toast" id="mensagens-alerta">
+            <header class="toast-header">
+                <strong> ALERT </strong>
+            </header>
+                <div class="toast-body">
+                    You have a 10 messages.
+                    <div class="mt-2 pt-2 border-top">
+                        <button data-bs-dismiss="toast" class="btn btn-danger" type="button">
+                            Decline
+                        </button>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="./lib/cdn.jsdelivr.net_npm_bootstrap@5.3.0_dist_js_bootstrap.bundle.min.js"></script>
+    <script>
+        const ativadorToast = document.getElementById('btn-checar-emails')
+        const mensagem = document.getElementById('mensagens-alerta')
+
+        if(ativadorToast) {
+            ativadorToast.addEventListener('click', function() {
+                const toast = new bootstrap.Toast(mensagem);
+                toast.show()
+            })
+        }
+    </script>
+</body>
+</html>
