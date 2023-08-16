@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>R P G</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="navbar navbar-expand-lg sticky-top" id="cabecalho">
+        <div class="container">
+            <h1 class="navbar-brand m-0 section-title">Dungeons and Dungeons</h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold">
+                        <a href="#sobre" class="nav-link ">
+                            <i class="bi bi-dice-1 me-1"></i>
+                            Sobre
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#racas" class="nav-link">
+                            <i class="bi bi-dice-2 me-1"></i>
+                            Racas
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-dice-3 me-1"></i>
+                            Classes
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-dice-4 me-1"></i>
+                            Fale Conosco
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div data-bs-spy="scroll" data-bs-target="cabecalho">
+        <section id="sobre">
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner" >
+                    <div class="carousel-item active" data-bs-intervel="3000">
+                        <img src="images/img1.jpeg" alt="Foto Dungeon and Dragons numero 1">
+                    </div>
+                    <div class="carousel-item" data-bs-intervel="3000">
+                        <img src="images/img2.jpg" alt="Foto Dungeon and Dragons numero 2">
+                    </div>
+                    <div class="carousel-item" data-bs-intervel="3000">
+                        <img src="images/img3.jpg" alt="Foto Dungeon and Dragons numero 3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev">
+                    <span class="carousel-control-prev-icon" data-bs-target="#carousel" data-bs-slide="prev"></span>
+                </button>
+                <button class="carousel-control-next">
+                    <span class="carousel-control-next-icon" data-bs-target="#carousel" data-bs-slide="next"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+            
+            <div class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="images/mesa.jpg" class="d-block w-100 rounded" alt="">
+                        </div>
+                        <div class="col-md-7">
+                            <h2 class="section-title"> O que e <span>RPG</span> ? </h2>
+                            <p> RPG (Role-Playing Game) é um jogo em que os participantes interpretam personagens fictícios, criando narrativas e tomando decisões com base em suas características e objetivos.</p>
+                            <h3 class="section-title">Por que jogar <span>RPG </span>?</h3>
+                            <p>Jogar RPG de mesa proporciona imersão única em histórias colaborativas e estimula a criatividade.</p>
+                            <ul>
+                                <li>Criatividade: Jogar RPG estimula sua imaginação ao criar personagens, mundos e histórias únicas.</li>
+                                <li>Socialização: É uma atividade colaborativa que fortalece laços e habilidades de comunicação ao interagir com outros jogadores.</li>
+                                <li>Desafio: RPG oferece enigmas e escolhas morais, desafiando suas habilidades de resolução de problemas e tomada de decisões.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="racas" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">Escolha de raca</h2>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <img src="images/human.jpg" alt="" class="d-block w-100">
+                        <h3 class="section-title">Humanos</h3>
+                        <p>A raça humana é versátil e adaptável, destacando-se por sua diversidade cultural e habilidades equilibradas em diferentes classes e aventuras.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="images/elf.jpg" alt="" class="d-block w-100">
+                        <h3 class="section-title">Elfos</h3>
+                        <p>Elfos são seres míticos conhecidos por sua elegância, longevidade e conexão com a natureza, frequentemente associados à agilidade e à magia.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="images/orc.png" alt="" class="d-block w-100">
+                        <h3 class="section-title">Orcs</h3>
+                        <p>Orcs são criaturas robustas e guerreiras, frequentemente retratadas como fortes e brutais, ligadas a clãs e cultura tribal.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

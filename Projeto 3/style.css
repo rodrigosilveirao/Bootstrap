@@ -1,0 +1,32 @@
+.body{
+    font-family: Roboto, sans-serif;
+}
+
+.navbar{
+    background-color: #541f14;
+}
+
+.nav .nav-link.active{
+    background-color: #fff;
+    color: #541f14;
+}
+
+.nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover{
+    color: #fff;
+}
+
+.section-title{
+    font-family: 'Handjet', cursive;
+    font-size: 40px;
+}
+
+.navbar-toggler{
+    background-color:  #938172;
+}
+
+#sobre{
+    background-color: #938172;
+    color: #fff;
+}
